@@ -1,0 +1,43 @@
+.toggle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+   }
+   
+   .toggle-input {
+    display: none;
+   }
+   
+   .toggle-label {
+    cursor: pointer;
+    height: 24px;
+    width: 48px;
+    background-color: var(--toggle-bg);
+    display: block;
+    position: relative;
+    border-radius: 25px;
+    padding: 2px;
+    box-sizing: border-box;
+   }
+   
+   .toggle-input:checked + .toggle-label {
+    background-color: var(--toggle-bg);
+   }
+   
+   .toggle-label:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: var(--toggle-fg);
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: all 0.2s ease;
+   }
+   
+   .toggle-input:checked + .toggle-label:after {
+    transform: translateX(20px);
+   }
