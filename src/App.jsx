@@ -3,10 +3,10 @@ import './App.css'
 import { Toggle } from './components/Toggle';
 import useLocalStorage from 'use-local-storage';
 import { AboutMe } from './components/AboutMe';
-import { Blog } from './components/Blog/Blog';
-import{Route, Routes, Link, NavLink} from 'react-router-dom'
+import{Route, Routes, NavLink} from 'react-router-dom'
 import { Projects } from './components/Projects/Projects';
 import { About } from './components/About/About';
+import { Footer } from './components/Footer/Footer';
 
 export const App = () => {
   const[isDark, setIsDark] = useLocalStorage("isDark", false);
@@ -22,7 +22,7 @@ export const App = () => {
             <NavLink to='/'>Home</NavLink>
           </li>
           <li>
-            <NavLink to='/blog'>Blog</NavLink>
+            <NavLink to='https://medium.com/@sanjanashivananda07'>Blog</NavLink>
           </li>
           <li>
             <NavLink to='/projects'>Projects</NavLink>
@@ -38,16 +38,19 @@ export const App = () => {
         />
         
       </nav>
-  
+
       
+
       
       <Routes>
         <Route path='*' element={<AboutMe/>}/>
-        <Route path='/blog' element={<Blog/>}/>
         <Route path='/projects' element={<Projects/>}/>
         <Route path='/about' element={<About/>}/>
       </Routes>
 
+      <Footer/>
+
+      
     </div>
   )
 }
