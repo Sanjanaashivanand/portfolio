@@ -4,9 +4,10 @@ footer{
     position: absolute;
     padding: 10px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    bottom: 0;
+    bottom: 1em;
 }
 
 footer a{
@@ -20,6 +21,12 @@ footer a{
     justify-content: center;
 }
 
+.icon-section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 footer .tooltiptext{
     visibility: hidden;
     color: var(--primary-text-color);
@@ -30,5 +37,10 @@ footer .tooltiptext{
 .tooltip:hover .tooltiptext {
     visibility: visible;
 } 
+
+.copyright{
+    font-size: 10px;
+    color: var(--primary-text-color);
+}
 
 

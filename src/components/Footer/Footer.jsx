@@ -8,12 +8,12 @@ const Icons = [
     {
         name: 'GitHub',
         icon: FaGithub,
-        link : '',
+        link : 'https://github.com/Sanjanaashivanand',
       },
     {
     name: 'LinkedIn',
     icon: ImLinkedin ,
-    link: 'https://linkedin.com/in/yourlinkedin',
+    link: 'https://www.linkedin.com/in/sanjana-shivananda/',
     },
     {
       name: 'Leetcode',
@@ -31,15 +31,20 @@ export const Footer = () => {
 
   return (
     <footer>
-      {Icons.map((Icon, index)=>{
-        const Tag = Icon.icon;
-        return(
-          <a href={Icon.link} key={index} className='tooltip'>
-            <div className='tooltiptext'>{Icon.name}</div>
-            <Tag />
-          </a>
-        )
-      })}
+      <div className='icon-section'>
+        {Icons.map((Icon, index)=>{
+          const Tag = Icon.icon;
+          return(
+            <a href={Icon.link} key={index} className='tooltip'>
+              <div className='tooltiptext'>{Icon.name}</div>
+              <Tag />
+            </a>
+          )
+        })}
+      </div>
+      <div className='copyright'>
+        <p>&copy; 2024 Sanjana Shivananda. All Rights Reserved.</p>
+      </div>
     </footer>
   )
 }

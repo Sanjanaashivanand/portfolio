@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react';
 import './App.css'
 import { Toggle } from './components/Toggle';
 import useLocalStorage from 'use-local-storage';
@@ -7,37 +7,39 @@ import{Route, Routes, NavLink} from 'react-router-dom'
 import { Projects } from './components/Projects/Projects';
 import { About } from './components/About/About';
 import { Footer } from './components/Footer/Footer';
+import { AppNav } from './components/AppNav/AppNav';
+import { DesktopNav } from './DesktopNav/DesktopNav';
 
 export const App = () => {
   const[isDark, setIsDark] = useLocalStorage("isDark", false);
 
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
     <div className='App' data-theme={isDark ? "dark" : "light"}>
 
-      <nav className='desktop-nav'>
-        <ul>
-          <li>
-            <NavLink to='/'>Home</NavLink>
-          </li>
-          <li>
-            <NavLink to='https://medium.com/@sanjanashivananda07'>Blog</NavLink>
-          </li>
-          <li>
-            <NavLink to='/projects'>Projects</NavLink>
-          </li>
-          <li>
-            <NavLink to='/about'>About Me</NavLink>
-          </li>
-        </ul>
-        
-        <Toggle
+        {isMobile ? (<AppNav content={<Toggle
+            isChecked={isDark}
+            handleChange={() => setIsDark(!isDark)}
+        />}/>) : (<DesktopNav content={<Toggle
           isChecked={isDark}
           handleChange={() => setIsDark(!isDark)}
-        />
+        />}/>)}
         
-      </nav>
+
+        
 
       
 
