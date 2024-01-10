@@ -3,12 +3,13 @@ import './App.css'
 import { Toggle } from './components/Toggle';
 import useLocalStorage from 'use-local-storage';
 import { AboutMe } from './components/AboutMe';
-import{Route, Routes, NavLink} from 'react-router-dom'
+import{Route, Routes} from 'react-router-dom'
 import { Projects } from './components/Projects/Projects';
 import { About } from './components/About/About';
 import { Footer } from './components/Footer/Footer';
 import { AppNav } from './components/AppNav/AppNav';
 import { DesktopNav } from './DesktopNav/DesktopNav';
+import { ProjectInfo } from './components/Projects/ProjectInfo/ProjectInfo';
 
 export const App = () => {
   const[isDark, setIsDark] = useLocalStorage("isDark", false);
@@ -38,16 +39,12 @@ export const App = () => {
           handleChange={() => setIsDark(!isDark)}
         />}/>)}
         
-
-        
-
-      
-
       
       <Routes>
         <Route path='*' element={<AboutMe/>}/>
         <Route path='/projects' element={<Projects/>}/>
         <Route path='/about' element={<About/>}/>
+        <Route path='/projects/:id' element={<ProjectInfo/>}/>
       </Routes>
 
       <Footer/>
