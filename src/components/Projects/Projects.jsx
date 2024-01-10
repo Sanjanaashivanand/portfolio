@@ -10,12 +10,12 @@ export const Projects = () => {
       <h1>Projects</h1>
       {ProjectDetails.map((project,index)=>{
         return(
-           <div key={project.id} className='project-card'>
           <Link to={`/projects/${project.id}`}>
+           <div key={project.id} className='project-card'>
             <h3>{project.title}</h3>
-          </Link>
           <p>{project.description}</p>
         </div>
+        </Link>
         )
       })}
     </div>

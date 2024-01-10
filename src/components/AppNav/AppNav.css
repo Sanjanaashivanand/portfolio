@@ -84,6 +84,7 @@
     background-color: var(--image-bg);
     max-width: 100vw;
     min-height: 100vh;
+    background-color: var(--background-color);
 }
 
 .sidebar nav{
@@ -104,9 +105,10 @@
     margin: 20px;
     border-radius: 5px;
     height: 10vh;
-    font-size: 20px;
+    font-size: 2em;
     text-align: center;
     transition: background-color 0.3s, color 0.3s;
+    color: var(--foreground-color);
 }
 
 .sidebar nav ul li a{
@@ -117,11 +119,6 @@
     justify-content: center;
     text-decoration: none;
     color: var(--primary-text);
-}
-
-.sidebar nav li:hover {
-    color: var(--foreground-color);
-    background-color: #f7f7f7;
 }
 
   
