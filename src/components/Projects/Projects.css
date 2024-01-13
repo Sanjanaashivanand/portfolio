@@ -65,6 +65,7 @@
   }
   
   .project-title{
+    height: fit-content;
     position: absolute;
     top: 90%; /* Adjust the vertical position as needed */
     left: 50%; /* Adjust the horizontal position as needed */
