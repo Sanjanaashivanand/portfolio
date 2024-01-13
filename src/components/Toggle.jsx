@@ -2,6 +2,8 @@ import React from 'react'
 import './Toggle.css'
 
 export const Toggle = ({handleChange, isChecked}) => {
+
+   
   return (
     <div className='toggle-container'>
       <input

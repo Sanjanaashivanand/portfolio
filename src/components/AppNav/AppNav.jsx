@@ -1,46 +1,54 @@
 import React, {useState} from 'react'
 import { NavLink } from 'react-router-dom';
 import './AppNav.css'
+import { GiHamburgerMenu } from "react-icons/gi";
+import { IoCloseOutline } from "react-icons/io5";
 
 export const AppNav = (props) => {
 
     const [isChecked, setIsChecked] = useState(false);
 
-    const handleNavClick = () => {
-        setIsChecked(false); 
+    const handleCheckboxChange = () => {
+      setIsChecked(!isChecked);
     };
 
     return (
-        <nav className="appnav-container">
-            
-            <div className='mobile-toggle'>
-                {props.content}
+        <div className="appnav-container">
+
+            <div className='menu-items'>
+                <div className='mobile-toggle'>
+                    {props.content}
+                </div>
+
+                <label className="hamburger-menu" htmlFor="checkbox">
+                    <input type="checkbox" id="checkbox" checked={isChecked} onChange={handleCheckboxChange} />
+                    <span className="hamburger-icon">
+                        {!isChecked? <GiHamburgerMenu/> : <IoCloseOutline/>}
+                    </span>
+                </label>
             </div>
+
             
 
-            <label className='hamburger-menu'>
-                <input type='checkbox' checked={isChecked} onChange={() => setIsChecked(!isChecked)}/>
-            </label>
-
-
-            <div className='sidebar'>
+            <div className={`sidebar ${isChecked ? 'checked' : ''}`}>
                 <nav>
                     <ul>
                         <li>
-                            <NavLink className='link-element' to='/' onClick={handleNavClick}>Home</NavLink>
+                            <NavLink className='link-element' to='/' onClick={handleCheckboxChange}>Home</NavLink>
                         </li>
                         <li>
-                            <NavLink className='link-element' to='https://medium.com/@sanjanashivananda07' onClick={handleNavClick}>Blog</NavLink>
+                            <NavLink className='link-element' to='https://medium.com/@sanjanashivananda07' onClick={handleCheckboxChange}>Blog</NavLink>
                         </li>
                         <li>
-                            <NavLink className='link-element' to='/projects' onClick={handleNavClick}>Projects</NavLink>
+                            <NavLink className='link-element' to='/projects' onClick={handleCheckboxChange}>Projects</NavLink>
                         </li>
                         <li>
-                            <NavLink className='link-element' to='/about' onClick={handleNavClick}>About Me</NavLink>
+                            <NavLink className='link-element' to='/about' onClick={handleCheckboxChange}>About Me</NavLink>
                         </li>
                     </ul>
                 </nav>
             </div>
-        </nav>
+        </div>
+
   )
 }
