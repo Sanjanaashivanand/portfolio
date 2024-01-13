@@ -9,7 +9,6 @@
 
 .appnav-container{
     position: absolute;
-    top: 0;
     max-height: 100vh;
     min-width: 100vw;
 }
@@ -82,8 +81,8 @@
     padding: 0.5rem 1rem;
     padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
     background-color: var(--image-bg);
-    max-width: 100vw;
-    min-height: 100vh;
+    width: 100vw;
+    height: 100vh;
     background-color: var(--background-color);
 }
 
