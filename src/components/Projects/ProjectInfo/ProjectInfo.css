@@ -57,6 +57,27 @@
     margin-top: 16px;
 }
 
+@media (max-width:600px){
+    .project-info{
+        max-width: 100%;
+    }
+
+    .cover-image {
+        width: 300px;
+    }
+
+    .project-header{
+        font-size: 30px;
+        flex-direction: column;
+    }
+
+    .view-code-icon{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+
+}
 
 
   

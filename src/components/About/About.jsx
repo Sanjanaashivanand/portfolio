@@ -18,12 +18,8 @@ export const About = () => {
       <h4 className='sub-title'>Computer Science Master's Candidate</h4>
       
       <div className='about-description'>
-      <p><strong>Hey Tech Enthusiasts!</strong></p>
-      <p>Currently pursuing a Master's in Computer Science from Arizona State University, my journey involves crafting 
-        innovative tech solutions. My experience at PricewaterhouseCoopers Acceleration Centers delved into Cloud and Digital 
-        Platforms. Proficient in Python, Java, C++, and various web frameworks, I've crafted diverse projects, from a Mood-based 
-        Music Recommender to a Facial Recognition Smart Door Lock. Recognized for innovation and a commitment to volunteering, 
-        this portfolio invites you to join my whimsical yet impactful journey through the tech landscape!
+      <p><strong>Hello World!</strong></p>
+      <p>Welcome to my portfolio! I'm a Master's in Computer Science student at Arizona State University, passionate about experimenting with new technologies. As a skilled MERN stack developer, I'm continuously exploring the intersection of creativity and functionality. Currently, I'm diving into the captivating world of machine learning. Join me on this exciting journey of innovation and discovery!
       </p>
 
       </div>

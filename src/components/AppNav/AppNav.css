@@ -22,16 +22,13 @@
 }
 
 
-/* Apply styles to the sidebar when checkbox is checked */
-
-
 .sidebar {
     width: 100vw; /* Set background color as needed */
     height: 100vh;
     position: fixed;
     top: 0;
     right: -100%; 
-    transition: left 0.3s ease-in-out;
+    transition: right 0.5s ease-in-out;
     background-color: var(--image-bg);
     z-index: 999;
 }
@@ -50,10 +47,11 @@
 }
 
 .sidebar ul li{
-    font-size: 16px;
+    font-size: 2rem;
     width: 80%;
     text-align: center;
     padding: 16px;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .checked {
