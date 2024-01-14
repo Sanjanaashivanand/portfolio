@@ -92,6 +92,7 @@
   .about-container{
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
+    height: 70%;
   }
   .about-description {
     width: 100%;

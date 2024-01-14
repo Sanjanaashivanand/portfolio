@@ -1,13 +1,16 @@
 .menu-items{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     position: absolute;
     top: 0;
     right: 0;
     padding: 10px;
+    padding-top: 20px;
     z-index: 9999;
-    height: 10vh;
+    width: 100%;
+    position: sticky;
+    height: 50px;
 }
 
 
@@ -34,7 +37,7 @@
 }
 
 .sidebar nav{
-    height: 100%;
+    height: 90%;
     padding: 10px;
 }
 

@@ -1,16 +1,14 @@
-footer{
+footer {
     width: 100vw;
-    height: fit-content;
-    position: absolute;
+    position: fixed;
+    bottom: 0;
     padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    bottom: 0;
     background-color: var(--background-color);
-    z-index: auto;
-}
+  }
 
 footer a{
     margin: 10px;
@@ -44,5 +42,3 @@ footer .tooltiptext{
     font-size: 10px;
     color: var(--primary-text-color);
 }
-
-

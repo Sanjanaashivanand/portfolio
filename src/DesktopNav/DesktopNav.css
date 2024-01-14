@@ -7,8 +7,7 @@
     width: 100vw;
     height: fit-content;
     top: 0;
-    z-index: auto;
-    position: absolute;
+    position: sticky;
     cursor: pointer;
 }
   

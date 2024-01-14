@@ -6,6 +6,6 @@ export default defineConfig({
   plugins: [react()],
   base: "/portfolio/",
   optimizeDeps: {
-    exclude: ['chunk-S2TLTWWO']
+    exclude: ['chunk-S2TLTWWO'],
   }
 })
