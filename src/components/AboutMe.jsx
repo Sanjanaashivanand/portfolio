@@ -1,5 +1,6 @@
 import React from 'react'
 import './AboutMe.css'
+import memoji from '../assests/memoji.jpeg'
 
 
 export const AboutMe = () => {
@@ -9,8 +10,19 @@ export const AboutMe = () => {
 
   return (
     <div className='about-me'>
-        <h1 className='title'>Sanjana Shivananda</h1>
+
+      <div class="open-to-work-badge">
+    <img src={memoji} alt="Profile Picture"/>
+    <div class="open-to-work-overlay">
+      Open to Work
+    </div>
+  </div>
+
+        <h1 className='title'>Hello,<br/>
+        I am <span className='color-text'>Sanjana Shivananda</span></h1>
         
+        <div className='tagline'>Innovative Developer Crafting Intuitive Solutions</div>
+
         <div>
           <button class="box" onClick={handleDownload}>Download Resume</button>
         </div>

@@ -22,6 +22,7 @@ export const About = () => {
       <p>Welcome to my portfolio! I'm a Master's in Computer Science student at Arizona State University, passionate about experimenting with new technologies. As a skilled MERN stack developer, I'm continuously exploring the intersection of creativity and functionality. Currently, I'm diving into the captivating world of machine learning. Join me on this exciting journey of innovation and discovery!
       </p>
 
+
       </div>
 
       <div class="skill-section">
