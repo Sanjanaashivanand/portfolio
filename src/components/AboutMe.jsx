@@ -21,7 +21,7 @@ export const AboutMe = () => {
         <h1 className='title'>Hello,<br/>
         I am <span className='color-text'>Sanjana Shivananda</span></h1>
         
-        <div className='tagline'><p>Innovative Developer Crafting Intuitive Solutions</p></div>
+        <div className='tagline'><p>Full Stack Developer | Machine Learning Enthusiast</p></div>
 
         <div>
           <button class="box" onClick={handleDownload}>Download Resume</button>
