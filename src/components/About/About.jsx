@@ -8,8 +8,8 @@ export const About = () => {
   };
 
   return (
-    <div className='about-container'>
-      <h1 className='title'>About Me</h1>
+    <div className='about-me-container'>
+      <h1 className='head-line'>About Me</h1>
       <div className='my-image-container'>
         <img className='my-image' src={memoji} alt='me'/>
       </div>

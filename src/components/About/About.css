@@ -2,10 +2,12 @@
   overflow-y: scroll;
   height: 80%;
   padding: 20px;
+  display: flex;
 }
 
-.title{
+.head-line{
   text-align: center;
+  color: var(--primary-text-color);
 }
 
 .my-image-container{

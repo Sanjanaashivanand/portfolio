@@ -13,12 +13,13 @@
     width: 80%;
     margin-top: 20px;
     animation: slideIn 1s ease-out forwards;
-    text-align: left;
+    text-align: center;
 }
 
 .tagline{
     margin: 20px auto;
     color: var(--secondary-text-color);
+    text-align: center;
     overflow: hidden;
     white-space: nowrap;
     letter-spacing: 2px;
