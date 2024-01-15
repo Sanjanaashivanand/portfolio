@@ -16,7 +16,7 @@
     text-align: center;
 }
 
-.tagline{
+.tagline p{
     margin: 20px auto;
     color: var(--secondary-text-color);
     text-align: center;
@@ -25,6 +25,16 @@
     letter-spacing: 2px;
     animation: typing 2s steps(40, end), blink-caret 0.5s step-end infinite;
 }
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
 
 @media (max-width:600px){
     .tagline{
@@ -97,15 +107,6 @@
         transform: scale(1);
         opacity: 1;
       }
-  }
-
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 50%;
-    }
   }
 
   @keyframes blink-caret {

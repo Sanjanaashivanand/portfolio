@@ -1,8 +1,12 @@
-.about-container{
+.about-me-container{
   overflow-y: scroll;
   height: 80%;
   padding: 20px;
-  display: flex;
+  padding-top: 50px;
+}
+
+.about-me-content{
+  margin-top: 50px;
 }
 
 .head-line{
@@ -91,11 +95,13 @@
 
 /* Media query for responsive design */
 @media (max-width: 600px) {
-  .about-container{
+  .about-me-container{
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
     height: 70%;
+    padding-top: 20px;
   }
+
   .about-description {
     width: 100%;
   }
