@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import './App.css'
 import { Toggle } from './components/Toggle';
 import useLocalStorage from 'use-local-storage';
-import { AboutMe } from './components/AboutMe';
 import {Route, Routes} from 'react-router-dom'
 import { Projects } from './components/Projects/Projects';
 import { About } from './components/About/About';
@@ -10,6 +9,7 @@ import { Footer } from './components/Footer/Footer';
 import { AppNav } from './components/AppNav/AppNav';
 import { DesktopNav } from './DesktopNav/DesktopNav';
 import { ProjectInfo } from './components/Projects/ProjectInfo/ProjectInfo';
+import { Home } from './components/Home';
 
 export const App = () => {
   const[isDark, setIsDark] = useLocalStorage("isDark", false);
@@ -41,11 +41,11 @@ export const App = () => {
         
       
         <Routes>
-            <Route path='/portfolio/' element={<AboutMe />} />
+            <Route path='/portfolio/' element={<Home />} />
             <Route path='/portfolio/projects' element={<Projects />} />
             <Route path='/portfolio/about' element={<About />} />
             <Route path='/portfolio/projects/:id' element={<ProjectInfo />} />
-            <Route path='/portfolio/*' element={<AboutMe />} />
+            <Route path='/portfolio/*' element={<Home />} />
         </Routes>
 
       <Footer/>
