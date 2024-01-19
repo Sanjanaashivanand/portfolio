@@ -1,0 +1,41 @@
+.desktop-nav{
+    padding: 20px;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100vw;
+    height: fit-content;
+    top: 0;
+    position: sticky;
+    cursor: pointer;
+}
+  
+  
+.desktop-nav-list{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+  
+.desktop-nav-list li{
+      text-decoration: none;
+      padding: 10px;
+      padding-bottom: 0;
+      margin-right: 10px;
+      font-size: 16px;
+}
+  
+nav ul li a {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+
+nav ul li a:not(.active):hover{
+  color: var(--foreground-color);
+}
+
+nav ul li .active{
+  color: var(--foreground-color);
+}

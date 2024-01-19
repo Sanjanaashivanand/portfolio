@@ -1,0 +1,181 @@
+.about-me{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    color: var(--primary-text-color);
+    position: relative;
+    width: 80%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.tagline p{
+    margin: 20px auto;
+    color: var(--secondary-text-color);
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    letter-spacing: 2px;
+    animation: typing 2s steps(40, end), blink-caret 0.5s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+
+@media (max-width:600px){
+    .tagline{
+        visibility: hidden;
+    }
+}
+
+.color-text{
+    color: transparent;
+    -webkit-text-stroke: 1.5px var(--foreground-color);
+    animation: flicker 5s infinite;
+}
+
+.my-image-container{
+    animation: pop 0.5s ease-in-out;
+}
+  
+.box{
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    background-color: var(--foreground-color);
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.box:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes slideIn {
+    0% {
+      left: -100%;
+      opacity: 0;
+    }
+    100% {
+      left: 0;
+      opacity: 1;
+    }
+  }
+
+  @keyframes flicker {
+    0%, 18%, 20%, 50%, 60%, 100% {
+      opacity: 1;
+    }
+    
+    19%, 21%, 59% {
+      opacity: 0;
+    }
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+      }
+    
+      50% {
+        transform: scale(1.2);
+      }
+    
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+  }
+
+  @keyframes blink-caret {
+    from, to {
+      border-right: 5px solid transparent;
+    }
+    50% {
+      border-right: 5px solid var(--secondary-text-color);
+    }
+  }
+
+
+.open-to-work-badge {
+    display: inline-block;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    animation: pop 5s;
+    
+}
+
+.open-to-work-badge img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.open-to-work-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(76, 175, 80, 0.7); /* LinkedIn green with some transparency */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    visibility: hidden;
+    animation: hide 100s ease-in-out infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotateY(0deg);
+    }
+   
+    5% {
+        transform: rotateY(360deg);
+    }
+
+    10%{
+        transform: rotateY(0deg);
+    }
+    
+}
+
+@keyframes hide{
+    0% {
+        visibility: hidden;
+    }
+    5%{
+        visibility: visible;
+    }
+    10%{
+        visibility: hidden;
+    }
+}
