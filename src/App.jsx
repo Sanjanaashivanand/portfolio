@@ -41,11 +41,11 @@ export const App = () => {
         
       
         <Routes>
-            <Route path='/portfolio/' element={<Home />} />
-            <Route path='/portfolio/projects' element={<Projects />} />
-            <Route path='/portfolio/about' element={<About />} />
-            <Route path='/portfolio/projects/:id' element={<ProjectInfo />} />
-            <Route path='/portfolio/*' element={<Home />} />
+            <Route path='/' element={<Home />} />
+            <Route path='projects' element={<Projects />} />
+            <Route path='about' element={<About />} />
+            <Route path='projects/:id' element={<ProjectInfo />} />
+            <Route path='*' element={<Home />} />
         </Routes>
 
       <Footer/>
