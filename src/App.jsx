@@ -3,7 +3,7 @@ import './App.css'
 import { Toggle } from './components/Toggle';
 import useLocalStorage from 'use-local-storage';
 import { AboutMe } from './components/AboutMe';
-import {Route, Routes, Navigate} from 'react-router-dom'
+import {Route, Routes} from 'react-router-dom'
 import { Projects } from './components/Projects/Projects';
 import { About } from './components/About/About';
 import { Footer } from './components/Footer/Footer';
@@ -40,16 +40,6 @@ export const App = () => {
         />}/>)}
         
       
-<<<<<<< HEAD
-      <Routes>
-        <Route path='/' element={<AboutMe/>}/>
-        <Route path='/projects' element={<Projects/>}/>
-        <Route path='/about' element={<About/>}/>
-        <Route path='/projects/:id' element={<ProjectInfo/>}/>
-
-        <Route path="*" element={<Navigate to="/" />} />
-      </Routes>
-=======
         <Routes>
             <Route path='/portfolio/' element={<AboutMe />} />
             <Route path='/portfolio/projects' element={<Projects />} />
@@ -57,7 +47,6 @@ export const App = () => {
             <Route path='/portfolio/projects/:id' element={<ProjectInfo />} />
             <Route path='/portfolio/*' element={<AboutMe />} />
         </Routes>
->>>>>>> 18736af (routing issues fixed)
 
       <Footer/>
 
