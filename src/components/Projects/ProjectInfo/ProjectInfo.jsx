@@ -42,7 +42,7 @@ export const ProjectInfo = () => {
                 {project.title}
               </h1>
               <span className='view-code-icon'>
-                  <a href={project.code} target="_blank">
+                  <a href={project.code}>
                     <HiMiniCommandLine /> View Code
                   </a>
                 </span>
