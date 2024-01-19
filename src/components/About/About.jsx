@@ -15,7 +15,7 @@ export const About = () => {
       </div>
       
       <h2 className='name-tag'>Sanjana Shivananda</h2>
-      <h4 className='sub-title'>Computer Science Master's Candidate</h4>
+      <h4 className='sub-title'>Computer Science Master's Student</h4>
       
       <div className='about-description'>
       <p><strong>Hello World!</strong></p>

@@ -9,14 +9,13 @@ export const Home = () => {
   };
 
   return (
-    <div className='about-me'>
+    <div className='home-container'>
 
-      <div class="open-to-work-badge">
-    <img src={memoji} alt="Profile Picture"/>
-    <div class="open-to-work-overlay">
-      Open to Work
-    </div>
-  </div>
+      <div className='about-me'>
+
+        <div class="open-to-work-badge">
+          <img src={memoji} alt="Profile Picture"/>
+        </div>
 
         <h1 className='title'>Hello,<br/>
         I am <span className='color-text'>Sanjana Shivananda</span></h1>
@@ -26,6 +25,10 @@ export const Home = () => {
         <div>
           <button class="box" onClick={handleDownload}>Download Resume</button>
         </div>
+
+      </div>
+
+      
 
 
     </div>
