@@ -40,6 +40,7 @@ export const App = () => {
         />}/>)}
         
       
+<<<<<<< HEAD
       <Routes>
         <Route path='/' element={<AboutMe/>}/>
         <Route path='/projects' element={<Projects/>}/>
@@ -48,6 +49,15 @@ export const App = () => {
 
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
+=======
+        <Routes>
+            <Route path='/portfolio/' element={<AboutMe />} />
+            <Route path='/portfolio/projects' element={<Projects />} />
+            <Route path='/portfolio/about' element={<About />} />
+            <Route path='/portfolio/projects/:id' element={<ProjectInfo />} />
+            <Route path='/portfolio/*' element={<AboutMe />} />
+        </Routes>
+>>>>>>> 18736af (routing issues fixed)
 
       <Footer/>
 

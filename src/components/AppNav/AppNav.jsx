@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import './AppNav.css'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseOutline } from "react-icons/io5";
@@ -34,16 +34,16 @@ export const AppNav = (props) => {
                 <nav>
                     <ul>
                         <li>
-                            <NavLink className='link-element' to='/' onClick={handleCheckboxChange}>Home</NavLink>
+                            <Link className='link-element' to='/portfolio/' onClick={handleCheckboxChange}>Home</Link>
                         </li>
                         <li>
                             <NavLink className='link-element' to='https://medium.com/@sanjanashivananda07' onClick={handleCheckboxChange}>Blog</NavLink>
                         </li>
                         <li>
-                            <NavLink className='link-element' to='/projects' onClick={handleCheckboxChange}>Projects</NavLink>
+                            <NavLink className='link-element' to='/portfolio/projects' onClick={handleCheckboxChange}>Projects</NavLink>
                         </li>
                         <li>
-                            <NavLink className='link-element' to='/about' onClick={handleCheckboxChange}>About Me</NavLink>
+                            <NavLink className='link-element' to='/portfolio/about' onClick={handleCheckboxChange}>About Me</NavLink>
                         </li>
                     </ul>
                 </nav>
