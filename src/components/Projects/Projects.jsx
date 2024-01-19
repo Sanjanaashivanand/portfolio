@@ -10,7 +10,7 @@ export const Projects = () => {
       <div className='gallery-view'>
         {ProjectDetails.map((project, index) => {
           return (
-            <Link to={`/portfolio/projects/${project.id}`}>
+            <Link to={`/projects/${project.id}`}>
               <div key={project.id} className='project-card'>
                 <img className='display-image' src={project.image} alt={`Project: ${project.title}`} />
                 <div className='project-title'>
