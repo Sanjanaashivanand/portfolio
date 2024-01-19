@@ -35,7 +35,7 @@ export const Footer = () => {
         {Icons.map((Icon, index)=>{
           const Tag = Icon.icon;
           return(
-            <a href={Icon.link} key={index} target="_blank" className='tooltip'>
+            <a href={Icon.link} key={index} className='tooltip'>
               <div className='tooltiptext'>{Icon.name}</div>
               <Tag />
             </a>

@@ -34,16 +34,16 @@ export const AppNav = (props) => {
                 <nav>
                     <ul>
                         <li>
-                            <Link className='link-element' to='/portfolio/' onClick={handleCheckboxChange}>Home</Link>
+                            <Link className='link-element' to='/' onClick={handleCheckboxChange}>Home</Link>
                         </li>
                         <li>
                             <NavLink className='link-element' to='https://medium.com/@sanjanashivananda07' onClick={handleCheckboxChange}>Blog</NavLink>
                         </li>
                         <li>
-                            <NavLink className='link-element' to='/portfolio/projects' onClick={handleCheckboxChange}>Projects</NavLink>
+                            <NavLink className='link-element' to='/projects' onClick={handleCheckboxChange}>Projects</NavLink>
                         </li>
                         <li>
-                            <NavLink className='link-element' to='/portfolio/about' onClick={handleCheckboxChange}>About Me</NavLink>
+                            <NavLink className='link-element' to='/about' onClick={handleCheckboxChange}>About Me</NavLink>
                         </li>
                     </ul>
                 </nav>

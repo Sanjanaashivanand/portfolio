@@ -10,7 +10,7 @@ export const DesktopNav = (props) => {
             <Link to='/'>Home</Link>
           </li>
           <li>
-            <NavLink to='https://medium.com/@sanjanashivananda07' target="_blank">Blog</NavLink>
+            <NavLink to='https://medium.com/@sanjanashivananda07'>Blog</NavLink>
           </li>
           <li>
             <NavLink to='/projects'>Projects</NavLink>
