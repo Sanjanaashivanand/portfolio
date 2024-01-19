@@ -7,16 +7,16 @@ export const DesktopNav = (props) => {
     <nav className='desktop-nav'>
         <ul className='desktop-nav-list'>
           <li>
-            <Link to='/portfolio/'>Home</Link>
+            <Link to='/'>Home</Link>
           </li>
           <li>
             <NavLink to='https://medium.com/@sanjanashivananda07' target="_blank">Blog</NavLink>
           </li>
           <li>
-            <NavLink to='/portfolio/projects'>Projects</NavLink>
+            <NavLink to='/projects'>Projects</NavLink>
           </li>
           <li>
-            <NavLink to='/portfolio/about'>About Me</NavLink>
+            <NavLink to='/about'>About Me</NavLink>
           </li>
         </ul>
         {props.content}
