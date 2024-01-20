@@ -1,33 +1,24 @@
 .desktop-nav{
-    padding: 20px;
-    background-color: var(--background-color);
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100vw;
-    height: 8vh;
-    top: 0;
-    position: fixed;
-    cursor: pointer;
-    z-index: 1000;
+  max-height: 5vh;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  padding-right: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: transparent;
 }
-  
-  
+
 .desktop-nav-list{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    list-style: none;
+  display: inherit;
 }
-  
+
 .desktop-nav-list li{
-      text-decoration: none;
-      padding: 10px;
-      padding-bottom: 0;
-      margin-right: 10px;
-      font-size: 16px;
+  padding: 10px;
+  margin-right: 20px;
 }
-  
+
 nav ul li a {
   text-decoration: none;
   color: var(--primary-text-color);

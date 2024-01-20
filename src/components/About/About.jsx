@@ -8,7 +8,9 @@ export const About = () => {
   };
 
   return (
-    <div className='about-me-container'>
+    <div className='about-me-page-container'>
+      
+      <div className='about-me-content-conatiner'>
       <h1 className='head-line'>About Me</h1>
       <div className='my-image-container'>
         <img className='my-image' src={memoji} alt='me'/>
@@ -37,7 +39,8 @@ export const About = () => {
       </div>
 
       <div className='resume-button-container'>
-        <button className="resume-button" onClick={handleDownload}>Download Resume</button>
+        <button className="box" onClick={handleDownload}>Download Resume</button>
+      </div>
       </div>
 
       

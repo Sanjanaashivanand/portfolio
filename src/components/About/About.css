@@ -1,12 +1,12 @@
-.about-me-container{
-  overflow-y: scroll;
-  height: 80%;
-  padding: 20px;
-  padding-top: 50px;
+.about-me-page-container{
+  height: 90vh; 
+  padding-top: 10vh;
 }
 
-.about-me-content{
-  margin-top: 50px;
+.about-me-content-conatiner{
+    max-height: 80vh;
+    overflow-y: scroll;
+    padding: 20px;
 }
 
 .head-line{
@@ -33,16 +33,18 @@
 .name-tag {
   text-align: center;
   color: var(--primary-text-color);
+  font-family: "Playfair Display", serif;
 }
 
 .sub-title{
   color: var(--foreground-color);
   text-align: center;
+  font-family: "Playfair Display", serif;
 }
 
 .about-description {
   text-align: justify;
-  color: var(--secondary-text-color);
+  color: var(--primary-text-color);
   width: 50%;
   margin: 10px auto;
 }
@@ -70,8 +72,9 @@
   display: inline-block;
   margin: 5px;
   padding: 8px 12px;
-  background-color: var(--foreground-color);
-  color: var(--primary-text-color);
+  font-weight: bold;
+  background-color: var(--secondary-text-color);
+  color: var(--background-color);
   border-radius: 20px;
   text-align: center;
 }
@@ -85,8 +88,8 @@
   padding: 10px 20px;
   font-size: 16px;
   border: none;
-  background-color: var(--secondary-text-color); 
-  color: var(--foreground-color); 
+  background-color: var(--foreground-color); 
+  color: var(--background-color); 
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;

@@ -4,7 +4,8 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    position: relative;
+    bottom: 0;
 }
 
 .icon-section a{

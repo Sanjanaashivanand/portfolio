@@ -1,7 +1,11 @@
 .App {
-  width: 100%;
-  position: relative;
-  max-height: 100vh;
-  overflow-y: scroll;
+  width: 100vw;
+  height: 100vh;
   background-color: var(--background-color);
+}
+
+
+.main{
+  max-height: 85vh;
+  overflow-y: scroll;
 }

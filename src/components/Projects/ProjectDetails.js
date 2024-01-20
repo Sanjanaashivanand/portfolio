@@ -94,6 +94,7 @@ const ProjectDetails = [
 
   },
   // Add more projects with detailed descriptions here...
+  
 ];
 
 export default ProjectDetails;
