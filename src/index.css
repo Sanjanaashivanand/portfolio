@@ -13,7 +13,7 @@
   --secondary-text-color : #ffd000;;
   --toggle-bg : #f0eb9d;
   --toggle-fg : #ffd000;
-  --image-bg: rgba(243, 236, 236, 0.2);
+  --image-bg: rgba(243, 236, 236, 0.8);
 }
 
 [data-theme="dark"]{
