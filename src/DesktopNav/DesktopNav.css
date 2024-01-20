@@ -5,10 +5,11 @@
     justify-content: flex-end;
     align-items: center;
     width: 100vw;
-    height: fit-content;
+    height: 8vh;
     top: 0;
-    position: sticky;
+    position: fixed;
     cursor: pointer;
+    z-index: 1000;
 }
   
   

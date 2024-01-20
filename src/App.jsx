@@ -31,22 +31,22 @@ export const App = () => {
   return (
     <div className='App' data-theme={isDark ? "dark" : "light"}>
 
-        {isMobile ? (<AppNav content={<Toggle
+      {isMobile ? (<AppNav content={<Toggle
             isChecked={isDark}
             handleChange={() => setIsDark(!isDark)}
         />}/>) : (<DesktopNav content={<Toggle
           isChecked={isDark}
           handleChange={() => setIsDark(!isDark)}
-        />}/>)}
+      />}/>)}
         
       
-        <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/projects' element={<Projects />} />
-            <Route path='/about' element={<About />} />
-            <Route path='/projects/:id' element={<ProjectInfo />} />
-            <Route path='*' element={<Home />} />
-        </Routes>
+      <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/projects' element={<Projects />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/projects/:id' element={<ProjectInfo />} />
+          <Route path='*' element={<Home />} />
+      </Routes>
 
       <Footer/>
 
