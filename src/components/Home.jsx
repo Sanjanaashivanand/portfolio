@@ -69,7 +69,7 @@ const timeline = [
 
 export const Home = () => {
   const handleDownload = () => {
-    window.open('https://drive.google.com/uc?export=download&id=1bBebA0iYqM7xTXoAYksNPyVua0DeZfb_');
+    window.open('https://drive.google.com/uc?export=download&id=1PH2kVtMmnmmTmMoTZN-LrE6DswI_Nacj');
   };
 
 
