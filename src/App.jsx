@@ -51,8 +51,6 @@ export const App = () => {
             <Route path='*' element={<Home />} />
         </Routes>
       </div>
-
-      <Footer/>
       
 
       
