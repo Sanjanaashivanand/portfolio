@@ -28,7 +28,7 @@ export const Footer = () => {
     <footer className='footer'>
       <div className="icon-section">
     {Icons.map((Icon, index) => (
-      <SocialIcon label={Icon.name} url={Icon.link} style={{width: '2em', height: '2em'}}/>
+      <SocialIcon key={Icon.name} label={Icon.name} url={Icon.link} style={{width: '2em', height: '2em'}}/>
     ))}
   </div>
   <div className="copyright">

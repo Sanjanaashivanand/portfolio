@@ -1,18 +1,18 @@
 .home-conatiner{
   width: 100%;
-  max-height: 90vh;
-  padding: 20px;
-  overflow-y: scroll;
+  height: 100%;
+  margin-bottom: 10vh;
 }
 
 /* ABOUT ME */
 .about-me{
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 
 .open-to-work-badge{
   width: 200px;
@@ -21,6 +21,12 @@
   overflow: visible;
   background-color: var(--image-bg);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.open-to-work-badge img{
+  width: 200px;
+  height: 200px;
+  border-radius: 0 0 50% 50%;
   animation: pop 0.5s ease-in-out;
 }
 
@@ -36,16 +42,11 @@
   }
 }
 
-.open-to-work-badge img{
-  width: 200px;
-  height: 200px;
-  border-radius: 0 0 50% 50%;
-}
 
 .title{
     color: var(--primary-text-color);
     position: relative;
-    width: 80%;
+    width: 60%;
     margin-top: 20px;
     text-align: center;
 }
@@ -61,7 +62,7 @@
     opacity: 1;
   }
   50% {
-    opacity: 0.5;
+    opacity: 0.3;
   }
 }
 
@@ -93,6 +94,13 @@
   }
 }
 
+.work-status{
+  padding: 20px;
+  font-weight: 400;
+  color: var(--secondary-text-color);
+  text-shadow: #fff;
+  font-style: italic;
+}
   
 .box{
     display: inline-block;
@@ -118,16 +126,12 @@
 /*TIMELINE*/
 .timeline {
   width: 100%;
-  max-height: 85vh;
-  overflow-y: scroll;
+  position: relative;
 }
 
 .timeline-heading {
   padding: 10px;
-  position: sticky;
-  z-index: 100;
   width: 100%;
-  top: 0;
   font-size: 5vw;
   text-align: center;
   background-color: var(--background-color);
@@ -137,10 +141,6 @@
 .vertical-timeline-element-icon {
   margin: 3px;
 }
-
-
-
-
 
 
 @media (max-width:700px){
@@ -169,3 +169,46 @@
     -webkit-text-stroke: 2px var(--foreground-color);
   }
 }
+
+/*SKILL SECTION*/
+.skill-section{
+  background-color: var(--image-bg);
+  width: 100%;
+  padding: 10px;
+  border-radius: 50px;
+
+  h1{
+    background-color: transparent;
+  }
+}
+
+.tech-stack{
+  margin: auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 10px;
+}
+
+
+.reach-out-form{
+  background-color: var(--foreground-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: var(--background-color);
+  height: 40vh;
+  padding: 20px;
+}
+
+.email-button{
+  text-decoration: none;
+  color: black;
+  font-weight: 300;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 50px;
+  background-color: #fff;
+}
+
+

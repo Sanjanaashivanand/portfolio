@@ -1,6 +1,6 @@
 import React from 'react'
 import './About.css'
-import memoji from '../../assests/memoji.jpeg'
+import memoji from '../../assests/memoji.png'
 
 export const About = () => {
   const handleDownload = () => {
