@@ -188,6 +188,7 @@
   .about-me{
     justify-content: center;
   }
+  
   .title{
     width: 100%;
   }
@@ -235,7 +236,8 @@
   }
 
   .reach-out-form{
-    margin-bottom: 100px;
+    height: 50vh;
+    padding-bottom: 100px;
   }
 
 }
