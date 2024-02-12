@@ -88,7 +88,7 @@ export const Home = () => {
 
         <h1 className='title'>Hello,<br/>
         I am <span className='color-text'>Sanjana Shivananda</span>
-        , a Computer Science Grad Student at Arizona State University.</h1>
+        <span className='mobile-hide'>, a Computer Science Grad Student at Arizona State University.</span></h1>
         
         
         <div className='tagline'><p>Full Stack Developer | Machine Learning Enthusiast</p></div>
