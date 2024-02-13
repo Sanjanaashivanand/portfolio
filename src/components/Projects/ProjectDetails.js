@@ -91,8 +91,14 @@ const ProjectDetails = [
     <p>The Real-time COVID-19 Dashboard project seeks to provide users with a reliable and visually engaging platform to stay informed about the evolving global situation. By leveraging Worldometer's data API and React's capabilities, this project aims to contribute to public awareness and understanding of the ongoing pandemic.</p>
       `,
     code: 'https://github.com/Sanjanaashivanand/Covid_Tracker',
-
   },
+  // {
+  //   id: 'It7Vxxpp4v',
+  //   title: 'Fantom - An Ecommerce Website',
+  //   image: FantomImage,
+  //   description: `
+  //   <h2>Overview</h2>
+  // }
   // Add more projects with detailed descriptions here...
   
 ];

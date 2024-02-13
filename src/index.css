@@ -41,7 +41,7 @@ h1{
 }
 
 *::-webkit-scrollbar-track {
-  background-color: var(--background-color); 
+  background-color: transparent;
   border-radius: 8px; 
 }
 

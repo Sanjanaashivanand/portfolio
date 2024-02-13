@@ -8,6 +8,10 @@ import 'react-vertical-timeline-component/style.min.css';
 import { Footer } from './Footer/Footer';
 import { MdOutlineEmail } from "react-icons/md";
 
+import Mars from '../assests/ProjectImages/CurrentProjects/Mars.jpeg';
+import DataVis from '../assests/ProjectImages/CurrentProjects/DataVis.png';
+import TipAndCue from '../assests/ProjectImages/CurrentProjects/TipAndCue.png';
+
 
 
 
@@ -125,6 +129,26 @@ export const Home = () => {
         ))}
       
       </VerticalTimeline>
+      </div>
+
+      <div className='ongoing-projects'>
+        <h1 className='timeline-heading'>Ongoing Projects</h1>
+        <div className='ongoing-projects-grid'>
+          <div className='project'>
+            <img src={Mars}></img>
+            <h3>Detecting Cones on Mars using Vision Transformers</h3>
+          </div>
+
+          <div className='project'>
+            <img src={DataVis}></img>
+            <h3>EduVis: Researching Efficient Data Vizualization Methods</h3>
+          </div>
+
+          <div className='project'>
+            <img src={TipAndCue}></img>
+            <h3>Tip and Cue: Prompt based ship detection using Sentinel2 Data</h3>
+          </div>
+        </div>
       </div>
 
       <div className='skill-section'>

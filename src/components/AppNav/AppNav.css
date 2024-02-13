@@ -2,13 +2,14 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
-    padding: 10px;
+    padding: 15px 0px;
     padding-top: 20px;
     z-index: 9999;
     width: 100%;
+    background-color: var(--background-color);
     height: 30px;
 }
 
@@ -25,7 +26,7 @@
 
 
 .sidebar {
-    width: 100vw; /* Set background color as needed */
+    width: 100vw; 
     height: 100vh;
     position: fixed;
     top: 0;
