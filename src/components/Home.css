@@ -163,6 +163,7 @@ svg{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-gap: 10px;
+
 }
 
 
@@ -188,6 +189,12 @@ svg{
 }
 
 @media (max-width:700px){
+  .ongoing-projects-grid{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
   .about-me{
     justify-content: center;
   }
@@ -249,6 +256,10 @@ svg{
   gap: 20px;
   justify-content: center;
   align-items: center;
+
+  h3{
+    color: var(--primary-text-color);
+  }
 }
 
 .project {
