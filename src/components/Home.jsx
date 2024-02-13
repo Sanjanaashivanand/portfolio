@@ -109,6 +109,27 @@ export const Home = () => {
 
       </div>
 
+      <div className='ongoing-projects'>
+        <h1 className='timeline-heading'>Ongoing Projects</h1>
+        <div className='ongoing-projects-grid'>
+          <div className='project'>
+            <img src={Mars}></img>
+            <h3>Detecting Cones on Mars using Vision Transformers</h3>
+          </div>
+
+          <div className='project'>
+            <img src={DataVis}></img>
+            <h3>EduVis: Researching Efficient Data Vizualization Methods</h3>
+          </div>
+
+          <div className='project'>
+            <img src={TipAndCue}></img>
+            <h3>Tip and Cue: Prompt based ship detection using Sentinel2 Data</h3>
+          </div>
+        </div>
+      </div>
+
+
       <div className="timeline">
         <h1 className='timeline-heading'>Education and Experience</h1>
         <VerticalTimeline lineColor='var(--secondary-text-color)'>
@@ -131,26 +152,7 @@ export const Home = () => {
       </VerticalTimeline>
       </div>
 
-      <div className='ongoing-projects'>
-        <h1 className='timeline-heading'>Ongoing Projects</h1>
-        <div className='ongoing-projects-grid'>
-          <div className='project'>
-            <img src={Mars}></img>
-            <h3>Detecting Cones on Mars using Vision Transformers</h3>
-          </div>
-
-          <div className='project'>
-            <img src={DataVis}></img>
-            <h3>EduVis: Researching Efficient Data Vizualization Methods</h3>
-          </div>
-
-          <div className='project'>
-            <img src={TipAndCue}></img>
-            <h3>Tip and Cue: Prompt based ship detection using Sentinel2 Data</h3>
-          </div>
-        </div>
-      </div>
-
+    
       <div className='skill-section'>
         <h1 className='timeline-heading'>Skills</h1>
         <div className='tech-stack'>
