@@ -10,6 +10,7 @@ import { AppNav } from './components/AppNav/AppNav';
 import { DesktopNav } from './DesktopNav/DesktopNav';
 import { ProjectInfo } from './components/Projects/ProjectInfo/ProjectInfo';
 import { Home } from './components/Home';
+import styled from 'styled-components';
 
 export const App = () => {
   const[isDark, setIsDark] = useLocalStorage("isDark", false);

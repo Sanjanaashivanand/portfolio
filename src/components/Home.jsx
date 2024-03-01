@@ -132,13 +132,14 @@ export const Home = () => {
 
       <div className="timeline">
         <h1 className='timeline-heading'>Education and Experience</h1>
-        <VerticalTimeline lineColor='var(--secondary-text-color)'>
+        <VerticalTimeline lineColor='lightgrey' className='timeline-container'>
         {[...timeline].reverse().map((item, key)=>(
           <VerticalTimelineElement
           key={item.company}
-          className="vertical-timeline-element--work"
+          className="vertical-timeline-element"
           position={item.isWork ? 'right' : 'left'}
-          contentStyle={{ background: 'var(--secondary-text-color)', color: 'var(--primary-text-color)', borderRadius: '20px'}}
+          contentStyle={{ background: 'var(--timeline-bg)', color: 'var(--primary-text-color)', borderRadius: '30px', padding:'20px'}}
+          iconClassName={ 'timeline-icon'}
           iconStyle={{ background: 'var(--secondary-text-color)', color: 'var(--primary-text-color)' }}
           icon={item.isWork ? <WorkIcon/> : <SchoolIcon/>}
         >

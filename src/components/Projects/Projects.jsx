@@ -2,6 +2,7 @@ import React from 'react'
 import './Projects.css'
 import ProjectDetails from './ProjectDetails'
 import { Link } from 'react-router-dom'
+import {Footer} from '../Footer/Footer'
 
 export const Projects = () => {
  return (
@@ -21,6 +22,7 @@ export const Projects = () => {
           )
         })}
       </div>
+      <Footer/>
     </div>
  )
 }

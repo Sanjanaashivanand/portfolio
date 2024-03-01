@@ -126,8 +126,24 @@
 /*TIMELINE*/
 .timeline {
   width: 100%;
-  position: relative;
-  margin-bottom: 50px;
+}
+
+.vertical-timeline-element{
+  margin-left: 10px;
+  
+  span{
+    margin: 5px;
+  }
+
+  div{
+    box-shadow: none;
+    padding: 10px;
+    margin-top: 5px;
+    border: 5px solid var(--background-color); /* Border color */
+  border-radius: 10px; /* Adjust border radius for rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  margin: 5px;
+  }
 }
 
 .timeline-heading{
@@ -139,8 +155,8 @@
   font-size: 56px;
 }
 
-.vertical-timeline-element-icon {
-  margin: 3px;
+.timeline-icon{
+  background-color: aqua;
 }
 
 
@@ -151,7 +167,7 @@
   margin: 20px;
 }
 
-svg{
+.skill-section svg{
   height: 50px;
   width: auto;
   margin: auto;
