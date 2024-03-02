@@ -8,9 +8,9 @@ import 'react-vertical-timeline-component/style.min.css';
 import { Footer } from './Footer/Footer';
 import { MdOutlineEmail } from "react-icons/md";
 
-import Mars from '../assests/ProjectImages/CurrentProjects/Mars.jpeg';
+import Disaster from '../assests/ProjectImages/CurrentProjects/Disaster.webp'
 import DataVis from '../assests/ProjectImages/CurrentProjects/DataVis.png';
-import TipAndCue from '../assests/ProjectImages/CurrentProjects/TipAndCue.png';
+import EuroSAT from '../assests/ProjectImages/CurrentProjects/EuroSAT.jpeg';
 
 
 
@@ -87,7 +87,7 @@ export const Home = () => {
       <div className='about-me'>
 
         <div class="open-to-work-badge">
-          <img src={memoji} alt="Profile Picture"/>
+          <img src={memoji} alt="Profile Picture" draggable="false"/>
         </div>
 
         <h1 className='title'>Hello,<br/>
@@ -113,8 +113,8 @@ export const Home = () => {
         <h1 className='timeline-heading'>Ongoing Projects</h1>
         <div className='ongoing-projects-grid'>
           <div className='project'>
-            <img src={Mars}></img>
-            <h3>Detecting Cones on Mars using Vision Transformers</h3>
+            <img src={Disaster}></img>
+            <h3>Post-Disaster Building Damage Assessment Tools using Satellite Imagery</h3>
           </div>
 
           <div className='project'>
@@ -123,8 +123,8 @@ export const Home = () => {
           </div>
 
           <div className='project'>
-            <img src={TipAndCue}></img>
-            <h3>Tip and Cue: Prompt based ship detection using Sentinel2 Data</h3>
+            <img src={EuroSAT}></img>
+            <h3>Boosting Vision Transformers using Self-Supervised Learning for Remote Sensing Classification</h3>
           </div>
         </div>
       </div>

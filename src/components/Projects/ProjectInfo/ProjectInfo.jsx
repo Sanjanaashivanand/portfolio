@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import ProjectDetails from '../ProjectDetails';
 import './ProjectInfo.css'
 import { HiMiniCommandLine } from "react-icons/hi2";
+import { BsNewspaper } from "react-icons/bs";
 
 
 export const ProjectInfo = () => {
@@ -42,9 +43,12 @@ export const ProjectInfo = () => {
                 {project.title}
               </h1>
               <span className='view-code-icon'>
-                  <a href={project.code}>
+                  {!project.code ? '' : <a href={project.code}>
                     <HiMiniCommandLine /> View Code
-                  </a>
+                  </a>}
+                  {!project.publication ? '' : <a href={project.publication}>
+                    <BsNewspaper /> View Paper
+                  </a>}
                 </span>
             </div>
             <img className='cover-image' src={project.image} alt={project.title} />

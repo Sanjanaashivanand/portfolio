@@ -8,6 +8,12 @@ import SanjSpeaks from '../../assests/AboutMe/Speaking.jpeg'
 import SanjatBeach from '../../assests/AboutMe/Beach.jpeg'
 import Sunset from '../../assests/AboutMe/Sunset.jpeg'
 import Me from '../../assests/AboutMe/AboutMe.jpeg'
+import { FaMusic } from "react-icons/fa";
+import { GiBookshelf } from "react-icons/gi";
+import { LuLanguages } from "react-icons/lu";
+import { TbBeach } from "react-icons/tb";
+import { TbSunset2 } from "react-icons/tb";
+
 
 export const About = () => {
   const handleDownload = () => {
@@ -36,14 +42,14 @@ export const About = () => {
         </div>
 
         <div className='about-col-img'>
-          <img className='my-img' src={Me}/>
+          <img className='my-img' src={Me} draggable="false"/>
         </div>
       </div>
 
       <div className='mindmap-row'>
         <h1>How I Approach a Project?</h1>
         <div className='mindmap'>
-          <img className="mindmap" src={mindmap}></img>
+          <img className="mindmap" src={mindmap} draggable="false"></img>
         </div>
       </div>
 
@@ -52,7 +58,7 @@ export const About = () => {
     <ul>
       <li>
         <div class='row'>
-          <h3>1. My code thrives on the energy of my playlist, where Beethoven meets the latest indie sensations.</h3>
+          <h3><FaMusic /> My code thrives on the energy of my playlist, where Beethoven meets the latest indie sensations.</h3>
           <iframe
             style={{ borderRadius: '12px' }}
             src="https://open.spotify.com/embed/playlist/6jbn1cwPrem1cT1guLU5Zl?utm_source=generator&theme=0"
@@ -65,26 +71,26 @@ export const About = () => {
       </li>
       <li>
         <div class='row'>
-          <h3>2. Reading is my passport to explore countless worlds and endless inspiration.</h3>
-          <img src={SanjReads} alt='Sanj Reads'></img>
+          <h3><GiBookshelf /> Reading is my passport to explore countless worlds and endless inspiration.</h3>
+          <img src={SanjReads} alt='Sanj Reads' draggable="false"></img>
         </div>
       </li>
       <li>
         <div class='row'>
-          <h3>3. I am Multilingual. I speak English, Hindi, Kannada, and Telugu</h3>
-          <img src={SanjSpeaks} alt='Sanj Reads'></img>
+          <h3><LuLanguages /> I am Multilingual. I speak English, Hindi, Kannada, and Telugu</h3>
+          <img src={SanjSpeaks} alt='Sanj Reads' draggable="false"></img>
         </div>
       </li>
       <li>
         <div class='row'>
-          <h3>4. Team Beach all the way! No stress about climbing 100 rocks—just the soothing rhythm of waves and sandy serenity.</h3>
-          <img src={SanjatBeach}></img>
+          <h3><TbBeach /> Team Beach all the way! No stress about climbing 100 rocks—just the soothing rhythm of waves and sandy serenity.</h3>
+          <img src={SanjatBeach} draggable="false"></img>
         </div>
       </li>
       <li>
         <div class='row'>
-          <h3>5. Life's mantra: 'Sometimes you make choices, sometimes choices make you.' Amid it all, a reminder: it's okay—just watch the sunset and heal yourself</h3>
-          <img src={Sunset} alt='Sanj Reads'></img>
+          <h3><TbSunset2 /> Life's mantra: 'Sometimes you make choices, sometimes choices make you.' Amid it all, a reminder: it's okay—just watch the sunset and heal yourself</h3>
+          <img src={Sunset} alt='Sanj Reads' draggable="false"></img>
         </div>
       </li>
     </ul>

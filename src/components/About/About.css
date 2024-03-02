@@ -44,7 +44,7 @@
 .mindmap{
   width: 80%;
   margin: auto;
-  border-radius: 50px;
+  border-radius: 20px;
 }
 
 .row{
@@ -61,11 +61,17 @@
   img{
     width: 250px;
     height: auto;
-    border-radius: 50px;
+    border-radius: 20px;
   }
 
   h3{
     width: 40%;
+    font-family:'Times New Roman', Times, serif;
+
+    svg{
+      width: 30px;
+      height: 30px;
+    }
   }
 }
 

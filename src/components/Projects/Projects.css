@@ -32,6 +32,10 @@ a{
   text-decoration: none;
 }
 
+.award{
+  color: gold;
+}
+
 .project-card:hover {
   transform: scale(1.05);
 }
@@ -46,7 +50,7 @@ a{
 .project-title {
   padding: 15px;
   font-size: 1.2em;
-  color: var(--secondary-text-color);
+  color: var(--primary-text-color);
 }
 
 @media (max-width: 768px) {
