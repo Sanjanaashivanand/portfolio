@@ -2,6 +2,7 @@
   width: 100%;
   height: 100%;
   margin-bottom: 10vh;
+  padding: 0;
 }
 
 /* ABOUT ME */
@@ -101,6 +102,35 @@
   text-shadow: #fff;
   font-style: italic;
 }
+
+.resume-btn-container{
+  padding: 10px;
+}
+
+.scroll-indicator {
+  margin-top: 30px;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 0.6s ease;
+  animation: bounce 2s infinite;
+}
+
+.scroll-indicator.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.scroll-text {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* Optional: bouncing effect */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(6px); }
+}
+
   
 .box{
     display: inline-block;
@@ -163,23 +193,27 @@
 /*SKILL SECTION*/
 .skill-section{
   width: 100%;
-  padding: 10px;
-  margin: 20px;
+  margin-bottom: 5px;
 }
 
-.skill-section svg{
-  height: 50px;
+.skill-section img{
+  height: 80px;
   width: auto;
   margin: auto;
 }
 
-.tech-stack{
+.tech-stack {
   margin: auto;
   width: 80%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr); /* Mobile default: 4 columns */
+  gap: 16px;
+}
 
+@media (min-width: 768px) {
+  .tech-stack {
+    grid-template-columns: repeat(6, 1fr); /* Tablet: 6 columns */
+  }
 }
 
 
@@ -190,8 +224,8 @@
   justify-content: space-evenly;
   color: var(--background-color);
   height: 40vh;
-  padding: 20px;
-  padding-bottom: 100px;
+  padding: 40px;
+  cursor: pointer;
 }
 
 .email-button{
@@ -205,12 +239,6 @@
 }
 
 @media (max-width:700px){
-  .ongoing-projects-grid{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
-
   .about-me{
     justify-content: center;
   }
@@ -254,45 +282,15 @@
   }
 
   .reach-out-form{
-    height: 50vh;
-    padding-bottom: 100px;
+    height: 35vh;
   }
 
-}
-
-.ongoing-projects {
-  text-align: center;
-  margin: 20px;
-  margin-bottom: 50px;
-}
-
-
-.ongoing-projects-grid {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-
-  h3{
-    color: var(--primary-text-color);
+  .reach-out-form p{
+    margin-bottom: 5px;
   }
-}
 
-.project {
-  border: 5px solid var(--image-bg);
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+  .email-button{
+    margin-top: 10px;
+  }
 
-.project img {
-  width: auto;
-  height: 200px;
-  object-fit: cover;
-  animation: pop 0.5s ease;
-}
-
-.project h3 {
-  padding: 16px;
-  font-size: 1.2rem;
 }
