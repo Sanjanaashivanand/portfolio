@@ -8,7 +8,7 @@ on:
 jobs:
   build:
     name: Build
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
 
     steps:
       - name: Checkout repo
@@ -20,13 +20,13 @@ jobs:
           node-version: 16
 
       - name: Install dependencies
-        run: npm ci
+        uses: bahmutov/npm-install@v1
 
       - name: Build project
         run: npm run build
 
       - name: Upload production-ready build files
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@df4c1e94f77e0e25fc2287f44b4b574238fb1526
         with:
           name: production-files
           path: ./dist
@@ -34,15 +34,12 @@ jobs:
   deploy:
     name: Deploy
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     if: github.ref == 'refs/heads/main'
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v3
-
       - name: Download artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: production-files
           path: ./dist
