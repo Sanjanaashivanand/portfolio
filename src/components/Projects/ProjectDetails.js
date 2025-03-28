@@ -4,13 +4,168 @@ import imageCovid from '../../assests/ProjectImages/COVID19Tracker.png'
 import Viby from '../../assests/ProjectImages/Viby.png'
 import DoorLock from '../../assests/ProjectImages/DoorLock.jpeg'
 import VideoCompression from '../../assests/ProjectImages/VideoCompression.png'
+import WorldExplorer from '../../assests/ProjectImages/WorldExplorer.png'
+import CyberBullying from '../../assests/ProjectImages/Cyberbullying.jpeg'
+import RAG from '../../assests/ProjectImages/RAG.jpeg'
+import Satellite from '../../assests/ProjectImages/EuroSAT.jpeg'
+import Velox from '../../assests/ProjectImages/Velox.png'
+import NYCcab from '../../assests/ProjectImages/NYCcab.png'
 
 
 const ProjectDetails = [
+  {
+    id: '6e2123c1',
+    title: 'AI World Explorer',
+    image: WorldExplorer,
+    shortDescription: 'An interactive world map that generates AI-powered country facts when clicked.',
+    tags: ['React', 'MapLibre', 'OpenAI API', 'GeoJSON', 'LLM'],
+    code: 'https://github.com/Sanjanaashivanand/ai-travel-guide-.git',
+    description: `
+      <h2>Overview</h2>
+      <p>AI World Explorer is a geography-based web app that uses an interactive map interface. When a user clicks on a country, a Large Language Model (LLM) fetches interesting facts and insights about the selected country.</p>
+
+      <h2>Features</h2>
+      <ul>
+        <li><strong>Interactive Map:</strong> Users can click on any country on the map UI to trigger AI-powered exploration.</li>
+        <li><strong>LLM Integration:</strong> On country selection, the app sends a query to an LLM API (e.g., GPT-4) to generate unique and informative content.</li>
+        <li><strong>Frontend:</strong> Designed with a clean, user-friendly map interface suitable for educational or exploration purposes.</li>
+        <li><strong>Scalable:</strong> Easy to expand with additional features like fun facts, travel guides, or historical summaries.</li>
+      </ul>
+
+      <h2>Potential Extensions</h2>
+      <p>Could be extended into a learning tool for students or integrated into travel websites for fun and informative browsing. Future work includes integrating image and flag generation, voice narration, and localization support.</p>
+    `
+  },
+  {
+    id: 'S736fcbed',
+    title: 'SafeSphere | Multimodal AI System',
+    image: '',
+    shortDescription: 'Multimodal system using LLMs (GPT-4, Falcon 7B, RoBERTa) to detect hate speech across text, audio, and images.',
+    tags: ['Python', 'LLM', 'GPT-4', 'RoBERTa', 'Multimodal AI', 'HuggingFace', 'PyTorch'],
+    image: CyberBullying,
+    description: `
+      <h2>Overview</h2>
+      <p>SafeSphere is an advanced multimodal AI system designed to detect and mitigate hate speech with high accuracy across diverse formats including text, audio, and image data. It leverages powerful Large Language Models (LLMs) such as GPT-4, Falcon 7B, and Twitter-RoBERTa for context-aware analysis.</p>
+
+      <h2>Highlights</h2>
+      <ul>
+        <li><strong>Multimodal Integration:</strong> Processes and analyzes input from text, voice, and visual formats for robust content moderation.</li>
+        <li><strong>Advanced LLM Usage:</strong> Combines the capabilities of GPT-4, Falcon 7B, and Twitter-RoBERTa to ensure nuanced understanding and real-time flagging of toxic content.</li>
+        <li><strong>Scalability & Ethics:</strong> Built with attention to fairness, transparency, and bias mitigation, supporting scalable moderation systems for social platforms.</li>
+        <li><strong>Stack:</strong> Python, HuggingFace Transformers, OpenAI API, PyTorch.</li>
+      </ul>
+
+      <h2>Impact</h2>
+      <p>SafeSphere can serve as a plug-in moderation tool for online platforms, enhancing user safety by identifying hateful speech and visual signals across multiple content formats. It aims to foster inclusive online environments while aligning with ethical AI principles.</p>
+    `
+  },
+  {
+    id: 'GraphProcessing2024',
+    title: 'Scalable Graph Processing',
+    image: NYCcab,
+    shortDescription: 'Deployed distributed graph processing with Neo4j, Scala, Kafka, and Docker for NYC taxi data.',
+    tags: ['Neo4j', 'Scala', 'Kafka', 'Docker', 'Distributed Systems'],
+    description: `
+      <h2>Overview</h2>
+      <p>Developed and deployed scalable graph processing algorithms using Neo4j, Kafka, Scala, and Docker to analyze NYC Yellow Cab Trip data. The project focused on real-time analytics and parallel computation using distributed systems principles.</p>
+
+      <h2>Key Components</h2>
+      <ul>
+        <li><strong>Graph Database:</strong> Modeled trip data as nodes and relationships in Neo4j for efficient traversal and querying.</li>
+        <li><strong>Stream Processing:</strong> Integrated Apache Kafka to simulate real-time data ingestion and stream processing pipelines.</li>
+        <li><strong>Backend:</strong> Implemented in Scala for high-performance graph algorithms and real-time metric computations.</li>
+        <li><strong>Containerization:</strong> Dockerized each component and orchestrated via Kubernetes for scalability.</li>
+      </ul>
+
+      <h2>Outcome</h2>
+      <p>The system demonstrated low-latency and high-throughput graph computations across distributed containers, capable of delivering actionable transportation insights in near real-time. The modular design allows for flexible deployment in real-world scenarios.</p>
+    `
+  },
+  {
+    id: '124f12a3',
+    title: 'Chunking Policies in RAG',
+    image: RAG,
+    shortDescription: 'Enhanced RAG accuracy using Late and Meta Chunking with RocksDB and FAISS for efficient retrieval.',
+    tags: ['RAG', 'FAISS', 'RocksDB', 'Docker', 'LLM'],
+    code: 'https://github.com/Fall-24-CSE511-Data-Processing-at-Scale/Project-7-Group-14.git',
+    description: `
+      <h2>Overview</h2>
+      <p>Implemented and benchmarked advanced chunking policies in a Retrieval-Augmented Generation (RAG) system to improve retrieval precision and scale with large document corpora. Focused on Late Chunking and Meta Chunking techniques.</p>
+
+      <h2>Key Features</h2>
+      <ul>
+        <li><strong>Late Chunking:</strong> Decomposed documents post-query to extract most relevant passages dynamically based on semantic similarity.</li>
+        <li><strong>Meta Chunking:</strong> Embedded document-level metadata to guide and optimize chunk relevance scoring.</li>
+        <li><strong>Optimized Storage:</strong> Integrated RocksDB for fast key-value data storage, enabling efficient large-scale document handling.</li>
+        <li><strong>Vector Search:</strong> Utilized FAISS for high-speed similarity search across large vectorized document sets.</li>
+        <li><strong>DevOps Setup:</strong> Packaged components into Docker containers and deployed pipelines using orchestration tools.</li>
+      </ul>
+
+      <h2>Outcome</h2>
+      <p>Improved RAG system performance in both retrieval accuracy and latency. Demonstrated scalable deployment for production-level QA systems using vector DBs and advanced chunking logic.</p>
+    `
+  },
+  {
+    id: 'RemoteSensingSSL2024',
+    title: 'Boosting Classification in Remote Sensing',
+    image: Satellite,
+    shortDescription: 'Benchmarked SSL strategies like MoCo, Dino-v2, and Dino-MC for classifying satellite imagery (EuroSAT).',
+    tags: ['Self-Supervised Learning', 'DINO', 'MoCo', 'ViT', 'Remote Sensing', 'EuroSAT'],
+    description: `
+      <h2>Overview</h2>
+      <p>This project evaluates foundational self-supervised learning (SSL) strategies in remote sensing to improve classification of satellite images. Using the EuroSAT dataset, it compares the performance of models like ResNet-50 (MoCo), ViT (Dino-v2), and ViT (Dino-MC).</p>
+
+      <h2>Methodology</h2>
+      <ul>
+        <li>Used EuroSAT (27,000 images, 10 classes) for land use classification.</li>
+        <li>Compared MoCo, Dino-v2, and Dino-MC pretrained models through fine-tuning.</li>
+        <li>Metrics: Accuracy, Precision, Recall, F1-Score.</li>
+      </ul>
+
+      <h2>Results</h2>
+      <ul>
+        <li><strong>Dino-MC:</strong> Highest accuracy at 99.33%, tailored for remote sensing using Seasonal Contrast (SeCo).</li>
+        <li><strong>ResNet50 + MoCo:</strong> Competitive results with simpler architecture.</li>
+        <li><strong>Dino-v2:</strong> Lower performance due to pretraining on general (ImageNet) data.</li>
+      </ul>
+
+      <h2>Insights</h2>
+      <p>Adapting SSL models with remote sensing-specific pretraining greatly boosts performance. Dino-MC demonstrated superior adaptability and precision. The project emphasizes the need for domain-aware transfer learning approaches for effective satellite image analysis.</p>
+    `
+  },
+  {
+    id: 'FraudDetectionVelox2024',
+    title: 'Fraud Detection with Velox Integration',
+    image: Velox,
+    shortDescription: 'Built an XGBoost-based license fraud detection pipeline with Velox integration and Dockerized deployment.',
+    tags: ['XGBoost', 'Python', 'Docker', 'Velox', 'PostgreSQL'],
+    description: `
+      <h2>Overview</h2>
+      <p>This project developed an end-to-end fraud detection system using identity document images and structured metadata. It utilized XGBoost as the baseline classifier and integrated Velox for optimized data processing.</p>
+
+      <h2>Key Components</h2>
+      <ul>
+        <li><strong>Feature Engineering:</strong> Extracted visual and textual metadata features from document images.</li>
+        <li><strong>Model:</strong> Trained an XGBoost classifier for fraud/not fraud classification, with hyperparameter tuning via random search.</li>
+        <li><strong>Deployment:</strong> Environment containerized using Docker and PostgreSQL for data storage.</li>
+        <li><strong>Integration:</strong> Velox compilation for efficient processing and model inference integration.</li>
+        <li><strong>Evaluation:</strong> AUC-ROC, Precision, and Recall used to validate performance.</li>
+      </ul>
+
+      <h2>Analytical Insights</h2>
+      <ul>
+        <li>Analyzed fraud prevalence by age groups (18–25 vs 26–40).</li>
+        <li>Identified regions and ZIP codes with high fraud activity.</li>
+        <li>Compared fraud issuance trends across years and genders.</li>
+      </ul>
+    `
+  },
   { 
     id: 'hKlR5pRGth', 
     title: 'Multilayer Perceptron (MLP) from Scratch', 
     image: imageMLP,
+    shortDescription: 'Built a digit recognition system using a CNN from scratch with Keras on MNIST.',
+    tags: ['Keras', 'CNN', 'Python', 'MNIST', 'Deep Learning'],
     description: `
     <h2>Overview</h2>
     <p>This project focuses on implementing a Convolutional Neural Network (CNN) for accurately recognizing handwritten digits from the MNIST dataset. The objective is to leverage deep learning techniques using the Keras library, experimenting with various CNN architectures and hyperparameters to enhance accuracy.</p>
@@ -42,6 +197,8 @@ const ProjectDetails = [
     id: 'ZYO25YebsD', 
     title: 'Object Detection using YOLO', 
     image: imageYOLO,
+    shortDescription: 'Real-time object detection using YOLO and TensorFlow on annotated datasets.',
+    tags: ['YOLO', 'TensorFlow', 'Computer Vision', 'Deep Learning'],
     description: `
     <h2>Overview</h2>
     <p>This project focuses on implementing the You Only Look Once (YOLO) algorithm for real-time object detection. The YOLO system is known for its state-of-the-art performance, offering impressive speed and accuracy. The objective is to apply YOLO to detect objects within images and videos, utilizing deep learning frameworks such as TensorFlow.</p>
@@ -70,6 +227,8 @@ const ProjectDetails = [
     id: '24gCNEMBzC',
     title: 'COVID-19 Tracker',
     image: imageCovid,
+    shortDescription: 'A React-based dashboard fetching real-time global COVID-19 data using Worldometer API.',
+    tags: ['React', 'API Integration', 'Data Visualization', 'COVID-19'],
     description: `
     <h2>Overview</h2>
     <p>This React project aims to create a real-time COVID-19 dashboard, providing up-to-date information and statistics sourced from Worldometer's data API. The dashboard serves as a web application designed to offer comprehensive insights into the ongoing COVID-19 pandemic on a global scale, including crucial metrics such as the number of confirmed cases, recoveries, deaths, and other relevant data points.</p>
@@ -100,6 +259,8 @@ const ProjectDetails = [
     title: 'Viby: Mood based Music Recommendation System',
     image: Viby,
     award: 'Best Innovation Award',
+    shortDescription: 'A music app using NLP and Spotify API to recommend mood-based playlists.',
+    tags: ['React', 'Redux', 'Spotify API', 'Flask', 'Python', 'NLP', 'MongoDB'],
     description: `
     <p>In a world where mental health concerns are on the rise, Viby emerges as a pioneering solution leveraging the therapeutic power of music. Grounded in psychological research affirming the stress-relieving and mood-elevating effects of music, Viby seeks to address the critical need for a holistic music recommendation system.</p>
 
@@ -129,6 +290,8 @@ const ProjectDetails = [
     id: 'VlcR6staTu',
     title: 'Enhancing Video Object Detection through Feature Extraction-Based Video Compression',
     image: VideoCompression,
+    shortDescription: 'Improved object detection by optimizing video compression using YOLO feature maps.',
+    tags: ['YOLO', 'FFMPEG', 'CNN', 'Computer Vision'],
     description: `
     <h2>Problem Statement:</h2>
     <p>
@@ -162,6 +325,8 @@ const ProjectDetails = [
     id: '61prOriSpa',
     title: 'Computer Vision Based Smart Door Lock Bot',
     image: DoorLock,
+    shortDescription: 'Built a secure smart door lock using face recognition, Raspberry Pi, and Discord bot.',
+    tags: ['Raspberry Pi', 'OpenCV', 'Face Recognition', 'Discord Bot', 'IoT'],
     description: `
     <h2>Abstract</h2>
 

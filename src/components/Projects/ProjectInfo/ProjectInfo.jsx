@@ -52,6 +52,15 @@ export const ProjectInfo = () => {
                 </span>
             </div>
             <img className='cover-image' src={project.image} alt={project.title} />
+
+            {project.tags && (
+              <div className='project-tags-info'>
+                {project.tags.map((tag, index) => (
+                  <span key={index} className='tag-badge'>{tag}</span>
+                ))}
+              </div>
+            )}
+
             <div className='content' dangerouslySetInnerHTML={{ __html: project.description }} />
           </div>
         }
