@@ -11,94 +11,106 @@ import Me from '../../assests/AboutMe/AboutMe.jpeg'
 import { FaMusic } from "react-icons/fa";
 import { GiBookshelf } from "react-icons/gi";
 import { LuLanguages } from "react-icons/lu";
-import { TbBeach } from "react-icons/tb";
-import { TbSunset2 } from "react-icons/tb";
-
+import { TbBeach, TbSunset2 } from "react-icons/tb";
+import { motion } from 'framer-motion';
 
 export const About = () => {
-  const handleDownload = () => {
-    window.open('https://drive.google.com/uc?export=download&id=1bBebA0iYqM7xTXoAYksNPyVua0DeZfb_');
+  const fadeIn = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0 }
   };
 
   return (
-    <div className='about-me-page-container'>
-    
-      <div className='about-row'>
+    <motion.div 
+      className='about-me-page-container'
+      initial="hidden"
+      animate="visible"
+      variants={fadeIn}
+      transition={{ duration: 0.8 }}
+    >
+      <motion.div className='about-row' variants={fadeIn} transition={{ delay: 0.2 }}>
         <div className='about-col-des'>
-        <h3>Hey there, I am Sanjana</h3>
-      <h1>Welcome to Sanjverse</h1>
+          <motion.h3 transition={{ delay: 0.3 }}>Hey, I'm Sanjana 💻🌞</motion.h3>
+          <motion.h1 transition={{ delay: 0.4 }}>This is where curiosity meets creativity ✨</motion.h1>
 
-      <p>I am a driven computer science graduate with specialized skills in web development, machine learning and data analytics. 
-        I combine analytical prowess with creative problem-solving ability to derive impactful insights. My curiosity and perpetual desire to 
-        upskill myself enables me to pivot smoothly across interdisciplinary projects. I excel when provided complex challenges requiring resourcefulness
-        and subtle discoveries previously unseen to positively impact communities through technology. 
-        <br/>
-        <br/>
-        When not coding models or building new frameworks, 
-        I unwind by capturing aesthetic details all around through photography or immersing myself in moving lyricism. 
-        I am always seeking to expand not just my technical competencies but also my perspective through continuous exposure to diverse people, 
-        ideas, and cultures worldwide. 
-      </p>
+          <motion.p transition={{ delay: 0.5 }}>
+            I'm a computer science grad passionate about building human-first tech. Whether it's designing clean interfaces, 
+            training models, or uncovering insights from messy data — I love bringing ideas to life.
+            <br/><br/>
+            My brain is a blend of logic and aesthetic. I’m constantly seeking ways to make tech more thoughtful, accessible, and fun. 
+            Big fan of deep work, intentional design, and poetic variable names.
+            <br/><br/>
+            When I’m not coding, you’ll find me curating Spotify playlists, geeking out over psychology podcasts, 
+            or taking long golden-hour walks to romanticize reality.
+          </motion.p>
         </div>
 
-        <div className='about-col-img'>
-          <img className='my-img' src={Me} draggable="false"/>
-        </div>
-      </div>
+        <motion.div 
+          className='about-col-img'
+          initial={{ scale: 0.9, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ delay: 0.6, duration: 0.6 }}
+        >
+          <img className='my-img' src={Me} alt="Sanjana" draggable="false"/>
+        </motion.div>
+      </motion.div>
 
-      <div className='mindmap-row'>
-        <h1>How I Approach a Project?</h1>
+      <motion.div className='mindmap-row' variants={fadeIn} transition={{ delay: 0.7 }}>
+        <h1>How I Think Through Tech 🧠⚙️</h1>
         <div className='mindmap'>
-          <img className="mindmap" src={mindmap} draggable="false"></img>
+          <img className="mindmap" src={mindmap} alt="Mind Map" draggable="false" />
         </div>
-      </div>
+      </motion.div>
 
-      <div class='facts'>
-    <h1>Fun Facts about me</h1>
-    <ul>
-      <li>
-        <div class='row'>
-          <h3><FaMusic /> My code thrives on the energy of my playlist, where Beethoven meets the latest indie sensations.</h3>
-          <iframe
-            style={{ borderRadius: '12px' }}
-            src="https://open.spotify.com/embed/playlist/6jbn1cwPrem1cT1guLU5Zl?utm_source=generator&theme=0"
-            frameBorder="0"
-            allowFullScreen
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-            loading="lazy"
-          ></iframe>
-        </div>
-      </li>
-      <li>
-        <div class='row'>
-          <h3><GiBookshelf /> Reading is my passport to explore countless worlds and endless inspiration.</h3>
-          <img src={SanjReads} alt='Sanj Reads' draggable="false"></img>
-        </div>
-      </li>
-      <li>
-        <div class='row'>
-          <h3><LuLanguages /> I am Multilingual. I speak English, Hindi, Kannada, and Telugu</h3>
-          <img src={SanjSpeaks} alt='Sanj Reads' draggable="false"></img>
-        </div>
-      </li>
-      <li>
-        <div class='row'>
-          <h3><TbBeach /> Team Beach all the way! No stress about climbing 100 rocks—just the soothing rhythm of waves and sandy serenity.</h3>
-          <img src={SanjatBeach} draggable="false"></img>
-        </div>
-      </li>
-      <li>
-        <div class='row'>
-          <h3><TbSunset2 /> Life's mantra: 'Sometimes you make choices, sometimes choices make you.' Amid it all, a reminder: it's okay—just watch the sunset and heal yourself</h3>
-          <img src={Sunset} alt='Sanj Reads' draggable="false"></img>
-        </div>
-      </li>
-    </ul>
-  </div>
+      <motion.div className='facts' variants={fadeIn} transition={{ delay: 0.8 }}>
+        <h1>📌 Snapshots </h1>
+        <ul>
+          {[{
+            icon: <FaMusic />,
+            text: "Music isn't just background noise — it's my dev environment.",
+            type: 'embed',
+            src: "https://open.spotify.com/embed/playlist/6jbn1cwPrem1cT1guLU5Zl?utm_source=generator&theme=0"
+          },
+          {
+            icon: <GiBookshelf />,
+            text: "If I'm not coding, I'm probably nose-deep in a plot twist.",
+            src: SanjReads
+          },
+          {
+            icon: <LuLanguages />,
+            text: "I speak English, Hindi, Kannada, and Telugu — and I code in a few languages too.",
+            src: SanjSpeaks
+          },
+          {
+            icon: <TbBeach />,
+            text: "Hiking? No thanks. I'll be over here with SPF 50 and a coconut.",
+            src: SanjatBeach
+          },
+          {
+            icon: <TbSunset2 />,
+            text: "Sunsets and silence — that's how I reboot.",
+            src: Sunset
+          }].map((fact, idx) => (
+            <motion.li key={idx} className='row' initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 * idx }}>
+              <h3>{fact.icon} {fact.text}</h3>
+              {fact.type === 'embed' ? (
+                <iframe
+                  style={{ borderRadius: '12px' }}
+                  src={fact.src}
+                  frameBorder="0"
+                  allowFullScreen
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                  loading="lazy"
+                ></iframe>
+              ) : (
+                <img src={fact.src} alt='Fact' draggable="false" />
+              )}
+            </motion.li>
+          ))}
+        </ul>
+      </motion.div>
 
       <Footer/>
-    
-      
-    </div>
+    </motion.div>
   )
 }
