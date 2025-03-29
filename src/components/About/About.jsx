@@ -34,14 +34,11 @@ export const About = () => {
           <motion.h1 transition={{ delay: 0.4 }}>This is where curiosity meets creativity ✨</motion.h1>
 
           <motion.p transition={{ delay: 0.5 }}>
-            I'm a computer science grad passionate about building human-first tech. Whether it's designing clean interfaces, 
-            training models, or uncovering insights from messy data — I love bringing ideas to life.
+          I'm a computer science grad passionate about building human-first tech. Whether it's designing clean interfaces, training models, or uncovering insights from messy data — I love bringing ideas to life.
             <br/><br/>
-            My brain is a blend of logic and aesthetic. I’m constantly seeking ways to make tech more thoughtful, accessible, and fun. 
-            Big fan of deep work, intentional design, and poetic variable names.
+            My brain is a blend of logic and aesthetic. I’m always looking for ways to make technology more intuitive and intentional — the kind that feels less like a tool and more like an experience. I treat clean code like creative writing: expressive, readable, and just the right amount of poetic.
             <br/><br/>
-            When I’m not coding, you’ll find me curating Spotify playlists, geeking out over psychology podcasts, 
-            or taking long golden-hour walks to romanticize reality.
+            My current research interests lie at the intersection of cognition and computation — from conceptual modeling to perception-driven learning. I'm especially drawn to projects that merge deep learning with human psychology to build systems that not only solve problems, but understand them.
           </motion.p>
         </div>
 
